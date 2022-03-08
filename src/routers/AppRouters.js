@@ -6,23 +6,21 @@ import {
 } from "react-router-dom";
 import { LoginScreen } from '../components/login/LoginScreen';
 import { MarvelScreen } from '../components/marvel/MarvelScreen';
-import { Navbar } from '../components/ui/Navbar';
+import { NavBar } from '../components/ui/NavBar';
+import { DashboardsRoutes } from './DashboardsRoutes';
 
 
 export const AppRouters = () => {
     return (
+        <div>
             <Router>
-                <div>
-
-                    <Navbar />
-
                     <Routes>
-
                         <Route  exact path="/login" element={ <LoginScreen />} />
-                        <Route   path="/" element={ <MarvelScreen />} />
-
+                        <Route   path="/" element={ <DashboardsRoutes />} />
                     </Routes>
-                </div>
+
             </Router>
+        </div>
+
     )
 }
