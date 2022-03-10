@@ -4,9 +4,10 @@ import {
     Routes,
     Route
 } from "react-router-dom";
+import { DcScreen } from '../components/dc/DcScreen';
+import { HeroesScreen } from '../components/heroes/HeroesScreen';
 import { LoginScreen } from '../components/login/LoginScreen';
 import { MarvelScreen } from '../components/marvel/MarvelScreen';
-import { NavBar } from '../components/ui/NavBar';
 import { DashboardsRoutes } from './DashboardsRoutes';
 
 
@@ -15,8 +16,12 @@ export const AppRouters = () => {
         <div>
             <Router>
                     <Routes>
-                        <Route  exact path="/login" element={ <LoginScreen />} />
                         <Route   path="/" element={ <DashboardsRoutes />} />
+                        <Route exact path="/marvel"  element={ <MarvelScreen /> } />
+                        <Route exact  path="/heroe/:heroeid"  element={ <HeroesScreen /> } />
+                        <Route  exact path="/dc"  element={ <DcScreen /> } />
+                        <Route  exact path="/login" element={ <LoginScreen />} />
+                        
                     </Routes>
 
             </Router>

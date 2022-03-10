@@ -5,8 +5,8 @@ export const NavBar = () => {
     return (
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
 
-            <Link 
-                className="navbar-brand" 
+            <Link
+                className="navbar-brand"
                 to="/"
             >
                 Asociaciones
@@ -15,36 +15,36 @@ export const NavBar = () => {
             <div className="navbar-collapse">
                 <div className="navbar-nav">
 
-                    <NavLink 
+                    <Link 
                         activeClassName="active"
                         className="nav-item nav-link" 
                         exact
                         to="/marvel"
                     >
                         Marvel
-                    </NavLink>
+                    </Link>
 
-                    <NavLink 
+                    <Link 
                         activeClassName="active"
                         className="nav-item nav-link" 
                         exact
                         to="/dc"
                     >
                         DC
-                    </NavLink>
+                    </Link>
                 </div>
             </div>
 
             <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
                 <ul className="navbar-nav ml-auto">
-                    <NavLink 
+                    <Link 
                         activeClassName="active"
                         className="nav-item nav-link" 
                         exact
                         to="/login"
                     >
                         Logout
-                    </NavLink>
+                    </Link>
                 </ul>
             </div>
         </nav>
