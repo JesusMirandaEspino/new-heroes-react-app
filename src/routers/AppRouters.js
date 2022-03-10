@@ -14,7 +14,13 @@ import { DashboardsRoutes } from './DashboardsRoutes';
 export const AppRouters = () => {
     return (
         <div>
-            <Router>
+<div>
+
+
+</div>
+
+<div>
+                <Router>
                     <Routes>
                         <Route   path="/" element={ <DashboardsRoutes />} />
                         <Route exact path="/marvel"  element={ <MarvelScreen /> } />
@@ -25,6 +31,9 @@ export const AppRouters = () => {
                     </Routes>
 
             </Router>
+</div>
+
+
         </div>
 
     )
